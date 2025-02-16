@@ -1,6 +1,7 @@
 // import advWorld from './assets/advWorld.svg'
 import './App.css'
 import HeroSection from './frames/HeroSection'
+import ReasonsVisiting from './frames/ReasonsVisiting'
 import { ConfigProvider } from 'antd'
 
 
@@ -22,6 +23,7 @@ function App() {
         }}
       >
       <HeroSection />
+      <ReasonsVisiting />
 
       </ConfigProvider>
     </>

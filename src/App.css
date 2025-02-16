@@ -4,12 +4,27 @@ body, html, #root {
   font-family: 'Open Sans', sans-serif;
   font-size: '28px';
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
 #root {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
   font-size: '28px';
 
+}
+
+/* slick settings section */
+.slick-arrow.slick-next:before {
+  content: "";
+}
+
+.slick-arrow.slick-prev:before {
+  content: "";
 }
 
 .link {
