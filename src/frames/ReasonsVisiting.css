@@ -3,19 +3,24 @@
   transition: transform 0.5s ease, opacity 0.5s ease;
   opacity: 0.7; /* Make side slides slightly transparent */
   transform: scale(0.8); /* Make side slides smaller */
+  /* margin: 0 0; */
 }
 
 .unique-slider-wrapper .slick-center {
+  position: relative;
   opacity: 1; /* Make center slide fully visible */
-  transform: scale(1); /* Make center slide larger */
+  transform: scale(1.2); /* Make center slide larger */
   z-index: 1; /* Bring center slide to the front */
 }
 
-.slick-slidr {
+/* .slick-track {
+  width: 80px;
+  margin: 0 auto;
+} */
+
+/* .slick-slider {
   margin-inline: -10px
-}
+} */
 
 
-.unique-slider-wrapper .textSlider.slick-slide:not(.slick-center) {
-  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1)); /* Add shadow to side slides */
-}
+

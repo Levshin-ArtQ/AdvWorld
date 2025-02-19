@@ -3,6 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { CustomNextArrow, CustomPrevArrow } from "../components/SampleArrows";
+import ArchitectureImage from "../assets/reasons_architecture.png";
+import ArtImage from "../assets/reasons_art.png";
+import HistoryImage from "../assets/reasons_history.png";
 import './ReasonsVisiting.css'
 
 const ReasonsVisiting = () => {
@@ -13,10 +16,10 @@ const ReasonsVisiting = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
+    centerPadding: "0",
     centerMode: true,
-    centerPadding: "30%",
     arrows: false,
     focusOnSelect: true,
   };
@@ -40,7 +43,7 @@ const ReasonsVisiting = () => {
     flexDirection: "column",
     position: "relative",
     zIndex: 0,
-    backgroundColor: "white",
+    backgroundColor: "black",
   };
 
   const reasonsContentStyle = {
@@ -57,8 +60,8 @@ const ReasonsVisiting = () => {
     backgroundSize: "cover",
     color: "white",
     display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
+    // justifyContent: "center",
+    // alignItems: "center",
   };
 
   const infoBoxContentStyles = {
@@ -165,25 +168,25 @@ const ReasonsVisiting = () => {
             </div>
           </Slider>
         </div>
-        <div className="sliderContainer unique-slider-wrapper" style={{ width: "60%", height: "auto" }}>
+        <div className="sliderContainer unique-slider-wrapper" style={{ width: "65%", height: "auto" }}>
           <Slider  {...sliderSettings} ref={sliderRef}>
             <div>
-              <h3 style={itemStyles}>1</h3>
+              <img src={ArchitectureImage} alt="Архитектура" />
             </div>
             <div>
-              <h3 style={itemStyles}>2</h3>
+              <img src={ArtImage} alt="Искусство" />
             </div>
             <div>
-              <h3 style={itemStyles}>3</h3>
+              <img src={HistoryImage} alt="История" />
             </div>
             <div>
-              <h3 style={itemStyles}>4</h3>
+              <img src={ArchitectureImage} alt="Архитектура" />
             </div>
             <div>
-              <h3 style={itemStyles}>5</h3>
+              <img src={ArtImage} alt="Искусство" />
             </div>
             <div>
-              <h3 style={itemStyles}>6</h3>
+              <img src={HistoryImage} alt="История" />
             </div>
           </Slider>
         </div>

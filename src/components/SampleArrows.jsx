@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import ArrowRight from '../assets/arrow-right-icon.svg';
+import ArrowLeft from '../assets/arrow-left-icon.svg';
 
 const CustomNextArrow = ({ className, onClick }) => {
   return (
@@ -12,12 +14,12 @@ const CustomNextArrow = ({ className, onClick }) => {
         alignContent: 'center',
         justifyContent: 'center',
         alignSelf: 'center',
-        backgroundColor: 'black', 
+        backgroundColor: 'transparent', 
         color: 'white',
 
       }}
       onClick={onClick}
-    >&gt;</div>
+    ><img src={ArrowRight} alt=">" className="arrowRight" /></div>
   );
 }
 
@@ -37,13 +39,13 @@ const CustomPrevArrow = ({ className, onClick }) => {
         alignContent: 'center',
         justifyContent: 'center',
         alignSelf: 'center',
-        backgroundColor: 'black', 
+        backgroundColor: 'transparent', 
         color: 'white',
 
       }}
       onClick={onClick}
     >
-      &lt;
+      <img src={ArrowLeft} alt="<" className="arrowLeft" />
     </div>
   );
 }
